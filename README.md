@@ -25,17 +25,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-
+The map() method is used for creating a new array from an existing one, applying a function to each one of the elements of the first array.
+The filter() method takes each element in an array and it applies a conditional statement against it. If this conditional returns true, the element gets pushed to the output array. If the condition returns false, the element does not get pushed to the output array.
+The reduce() method reduces an array of values down to just one value. To get the output value, it runs a reducer function on each element of the array.
 2. Explain the difference between a callback and a higher order function.
+Callback functions do not have special syntax; they are just a function that has been passed as an argument to another function. The function that takes another function as an argument is called a higher-order function. According to this definition, any function can become a callback function if it is passed as an argument.
 
 3. Explain what a closure is.
-
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 4. Describe the four principles of the 'this' keyword.
+Is the function called by new?
+Is the function called by call(), apply(), or bind()?
+Is the function called as a method, ie: obj.func()?
+Is the function called in the global scope?
 
 5. Why do we need super() in an extended class?
+We can see that the extends keyword takes care of extending the parent class Animal to the subclass in ES6 way, but the super keyword is also used here to make sure that Animal class is called via Gorilla ’s constructor so as to inherit the characteristics and behaviors of the Animal.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
-
 ## Instructions
 
 ### Task 1: Set up Project
